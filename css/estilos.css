@@ -1,0 +1,134 @@
+:root{
+    --border-color: linear-gradient(
+    to right,
+    tomato 0%,
+    gold 100%
+    );
+    --border-color2: linear-gradient(
+    to right,
+    #0022f8 0%,
+    #f800ed 100%
+    );
+    --card-color: #111;
+}
+.header{
+    width: 1433px;
+    height: 500px;
+    background-image: url('../img/head.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    background-position: center;
+}
+.espacio{
+    display: flex;
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 100px; /* O ajusta a un valor fijo como 100% o 300px */
+    height: 100px; /* Ajusta la altura según lo necesites */
+    background-image: url('../img/dere.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    flex-direction: row;
+
+
+
+}
+.card{
+opacity: 100%;
+    display: flex;
+    background: var(--border-color);
+    aspect-ratio: 10/16;
+    width: 200px;
+    padding: 5px;
+    border-radius: 16px;
+    position: relative;
+}
+.card2{
+opacity: 100%;
+    display: flex;
+    background: var(--border-color2);
+    aspect-ratio: 10/16;
+    width: 200px;
+    padding: 5px;
+    border-radius: 16px;
+    position: relative;
+}
+.card-body{
+    opacity: 96%;
+    background: var(--card-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+
+    
+}
+.container{
+    margin: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+body {
+    background-image: url('../img/fond.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+
+}
+.btn{
+     margin: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn a{
+
+  position: relative;
+  color: #f5f5f5;
+  height: 70px;
+  width: 220px;
+  display: flex;
+  text-align: center;
+  border-radius: 10px;
+  text-decoration: none;
+  background-image: linear-gradient(115deg,#5af800,#f8f800,#f800ed,#12bcfe,#44ce7b);
+}
+.btn a:hover{
+  animation: rotate 0.4s linear infinite;
+}
+@keyframes rotate {
+  100%{
+    filter: hue-rotate(-360deg)
+  }
+}
+.btn a span{
+
+  height: 88%;
+  width: 96%;
+  background: #111;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 6px;
+  line-height: 62px;
+  font-size: 25px;
+  transform: translate(-50%, -50%);
+}
+.gif-medidas {
+    width: 150px; /* Ancho del GIF */
+    height: 150px; /* Altura del GIF */
+}
+
+
+
